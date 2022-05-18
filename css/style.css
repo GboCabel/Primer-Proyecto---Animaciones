@@ -378,8 +378,11 @@ header {
        "footerI footerI";
    }
 }
-   .imgPosition {
-       display: none;
+@media (max-width: 780px ) {
+    .imgPosition {
+        display: none;
+}
+   
    }
 
 .headerI {
