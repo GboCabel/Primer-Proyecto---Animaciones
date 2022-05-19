@@ -27,11 +27,15 @@ body {
     font-size: 16px;
 }
 
-@media (max-width: 768px ) {
-    body{
+@media (max-width: 768px) {
+    body {
         align-items: center;
     }
-   
+
+}
+
+.logo {
+    width: 90px;
 }
 
 .tituloI {
@@ -51,10 +55,11 @@ body {
 
 }
 
-header{
+header {
     width: 100%;
-    
-} 
+
+}
+
 .navegacionPrincipalI {
     display: flex;
     justify-content: center;
@@ -66,20 +71,21 @@ header{
     justify-content: center;
     margin: 0 auto;
 }
-@media (max-width: 768px ) {
-    .navegacionPrincipalI{
+
+@media (max-width: 768px) {
+    .navegacionPrincipalI {
         height: 100%;
         flex-direction: column;
     }
-   
+
 }
 
-@media (max-width: 768px ) {
-    .navegacionPrincipal{
+@media (max-width: 768px) {
+    .navegacionPrincipal {
         height: 100%;
         flex-direction: column;
     }
-   
+
 }
 
 .navegacionPrincipalI a {
@@ -87,6 +93,7 @@ header{
     text-decoration: none;
     font-weight: bold;
     padding: 1rem;
+    font-size: 15px;
 }
 
 .navegacionPrincipal a {
@@ -94,40 +101,41 @@ header{
     text-decoration: none;
     font-weight: bold;
     padding: 1rem;
+    font-size: 30px;
 }
 
-#buscador{
+#buscador {
     width: 35%;
     padding: 7px;
     box-sizing: border-box;
     border-radius: 4px;
     font-size: 17px;
 }
+
 @media (max-width: 768px) {
-    #buscador{
+    #buscador {
         width: 80%;
         margin-left: 70px;
     }
-   
+
 }
 
 .navegacionPrincipal a:hover {
     background-color: var(--amarillo);
     color: var(--negro);
-    padding: 1rem;
+    padding: 0.1rem;
     cursor: pointer
-
 }
 
 .navSecundario {
     display: flex;
     justify-content: space-between;
-    font-size:  2rem; 
+    font-size: 2rem;
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 2rem;
     background-color: #EDE7E3;
-   
+
 
 }
 
@@ -157,34 +165,36 @@ header{
 }
 
 @media (max-width: 768px) {
-    .subtitulo{
+    .subtitulo {
         width: 30%;
     }
-   }
+}
+
 /* ESTILO A FORMULARIO*/
 
 form {
-    width:450px;
+    width: 450px;
     margin-right: 0;
-    background: rgba(0,0,0,0.4);
+    background: rgba(0, 0, 0, 0.4);
     padding: 10px 20px;
     box-sizing: border-box;
     border-radius: 7px;
 }
 
-@media (max-width: 768px ) {
+@media (max-width: 768px) {
     form {
         margin-left: 0;
         width: 100%;
-        }
-        .mainForm {
-            margin-left: 0;
-            width: 100%;
-            height: 100%;
-        }
-   }
+    }
 
-.formTittle{
+    .mainForm {
+        margin-left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.formTittle {
     font-size: 2.8rem;
     text-align: center;
     color: var(--azulOscuro);
@@ -193,11 +203,11 @@ form {
 }
 
 form p {
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
     font-size: 1.7rem
 }
 
-.text{
+.text {
     width: 100%;
     margin-bottom: 20px;
     padding: 7px;
@@ -241,10 +251,10 @@ textarea {
 }
 
 @media (max-width: 768px) {
-    .textoInicial{
+    .textoInicial {
         width: 50%;
     }
-   
+
 }
 
 .imgPrincipal {
@@ -259,35 +269,39 @@ textarea {
 
 .imgPosition {
     display: grid;
-    grid-template-areas: 
-    "caja1 caja2 caja3";
+    grid-template-areas:
+        "caja1 caja2 caja3";
 }
 
-.caja1{
+.caja1 {
     grid-area: caja1;
 }
 
-.caja2{
+.caja2 {
     grid-area: caja2;
 }
 
-.caja3{
+.caja3 {
     grid-area: caja3;
 }
 
-
 .imgSecundaria {
     margin-right: 0;
-   height: 100%;
-    width: 100%; 
-   }
-
-   @media (max-width:768px ) {
-    .imgSecundaria{
-        display: none;
-    } 
-
+    height: 100%;
+    width: 100%;
 }
+
+@media (max-width:768px) {
+    .imgSecundaria {
+        display: none;
+    }
+
+    .navbar-brand {
+        margin-left: 0;
+        
+    }
+}
+
 
 .ofertasImg {
     margin-top: 20px;
@@ -342,14 +356,14 @@ footer {
 
 /* APLICAMOS GRID AREA paginas con formulario*/
 
-.bodyPadreGrid{
-    
-    display:grid;
-    grid-template-areas: 
-    " header header"
-    " imgSecundaria mainForm  "
-    " footer footer ";
-}  
+.bodyPadreGrid {
+
+    display: grid;
+    grid-template-areas:
+        " header header"
+        " imgSecundaria mainForm  "
+        " footer footer ";
+}
 
 header {
     grid-area: header;
@@ -363,58 +377,60 @@ header {
     grid-area: imgSecundaria;
 }
 
-.footer
-{
+.footer {
     grid-area: footer;
 }
 
 /*MEDIA QUERIES AL INDEX*/
 @media(max-width: 768px) {
-   .bodyGridI{
-       display: grid;
-       grid-template-areas: 
-       "headerI headerI"
-       "mainI mainI"
-       "footerI footerI";
-   }
+    .bodyGridI {
+        display: grid;
+        grid-template-areas:
+            "headerI headerI"
+            "mainI mainI"
+            "footerI footerI";
+    }
 }
-@media (max-width: 780px ) {
+
+@media (max-width: 780px) {
     .imgPosition {
         display: none;
+    }
+
 }
-   
-   }
 
 .headerI {
     grid-area: headerI;
 }
 
-.mainI{
-    grid-area: mainI ;
+.mainI {
+    grid-area: mainI;
 }
 
-.footerI{
+.footerI {
     grid-area: footerI
 }
+
 @media (max-width: 440px) {
-   
-    .tituloI{
-    font-size: 3.2rem;
-    margin-right: 175px; 
-   
-   }
 
-   .navegacionPrincipalI a{
-align-items: center ;
+    .tituloI {
+        font-size: 3.2rem;
+        margin-right: 175px;
 
-   }
-    
+    }
+
+    .navegacionPrincipalI a {
+        align-items: center;
+
+    }
+
 }
 
-@media (max-width:760px ) {
+@media (max-width:760px) {
     .navSecundario {
         width: 100%;
     }
+
     .ofertasImg {
         margin-top: 20px;
         display: grid;
@@ -422,31 +438,32 @@ align-items: center ;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(1, 1fr);
     }
-    
+
     .novedadesImg {
         display: grid;
         gap: 20px;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(1, 1fr);
-   
-}
+
+    }
 }
 
-@media (max-width:440px ) {
+@media (max-width:440px) {
     .navSecundario a {
         width: 100%;
         font-size: 30px;
         display: flex;
         align-items: center;
     }
-       .ofertasImg {
+
+    .ofertasImg {
         margin-top: 20px;
         display: grid;
         gap: 20px;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(1, 1fr);
     }
-    
+
     .novedadesImg {
         display: grid;
         gap: 20px;
@@ -454,15 +471,3 @@ align-items: center ;
         grid-template-rows: repeat(1, 1fr);
     }
 }
-        
-    
-        
-
-
-
-
-
-
-
-
-
