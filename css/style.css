@@ -1,12 +1,16 @@
+/* TIPO DE FUENTE DE LA PAGINA DE WEB */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+/* RESETEANDO TODOS LOS MARGENES */
 * {
     margin: 0 auto;
     padding: 0 auto;
 }
 
-/* Coloco 0.1 por que sino se ve cortada la pagina con margen 0 */
-
+html {
+    font-size: 62.5%;
+}
+/* AGREGANDO CODIGO RAIZ DE PALETA DE COLORES DE LA WEB */
 :root {
     --azulOscuro: #16697A;
     --azulMedio: #489FB5;
@@ -15,10 +19,6 @@
     --amarillo: #FFA62B;
     --negro: #212121;
 
-}
-
-html {
-    font-size: 62.5%;
 }
 
 body {
@@ -60,24 +60,10 @@ header {
 
 }
 
-.navegacionPrincipalI {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-}
-
 .navegacionPrincipal {
     display: flex;
     justify-content: center;
     margin: 0 auto;
-}
-
-@media (max-width: 768px) {
-    .navegacionPrincipalI {
-        height: 100%;
-        flex-direction: column;
-    }
-
 }
 
 @media (max-width: 768px) {
@@ -86,14 +72,6 @@ header {
         flex-direction: column;
     }
 
-}
-
-.navegacionPrincipalI a {
-    color: var(--fondoClaro);
-    text-decoration: none;
-    font-weight: bold;
-    padding: 1rem;
-    font-size: 15px;
 }
 
 .navegacionPrincipal a {
@@ -119,7 +97,7 @@ header {
     }
 
 }
-
+/* AGREGANDO ANIMACION CON CURSOR EN BARRA DE NAV */
 .navegacionPrincipal a:hover {
     background-color: var(--amarillo);
     color: var(--negro);
@@ -144,7 +122,7 @@ header {
     text-decoration: none;
     font-weight: bolder;
 }
-
+/* AGREGANDO ANIMACION CON EL CURSOR A NAV SECUNDARIO  */
 .navSecundario a:hover {
     background-color: var(--azulOscuro);
     color: var(--fondoClaro);
@@ -234,6 +212,7 @@ textarea {
     font-size: 17px;
 }
 
+/* AGREGANDO ANIMACION CON CURSOR A BOTONES */
 .boton:hover {
     background-color: var(--amarillo);
     color: var(--negro);
@@ -301,7 +280,6 @@ textarea {
         
     }
 }
-
 
 .ofertasImg {
     margin-top: 20px;
@@ -426,7 +404,7 @@ header {
 
 }
 
-@media (max-width:760px) {
+@media (max-width:800px) {
     .navSecundario {
         width: 100%;
     }
@@ -435,6 +413,7 @@ header {
         margin-top: 20px;
         display: grid;
         gap: 20px;
+        width: 100%;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(1, 1fr);
     }
@@ -442,13 +421,14 @@ header {
     .novedadesImg {
         display: grid;
         gap: 20px;
+        width: 100%;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(1, 1fr);
 
     }
 }
 
-@media (max-width:440px) {
+@media (max-width:450px) {
     .navSecundario a {
         width: 100%;
         font-size: 30px;
@@ -459,6 +439,8 @@ header {
     .ofertasImg {
         margin-top: 20px;
         display: grid;
+        margin-left:0;
+        width: 100%;
         gap: 20px;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(1, 1fr);
@@ -466,8 +448,15 @@ header {
 
     .novedadesImg {
         display: grid;
+        margin-left:0;
+        width: 100%;
         gap: 20px;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(1, 1fr);
     }
+    
+    .imgSecundaria{
+        width: 20px;
+    }
+    
 }
